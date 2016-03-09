@@ -114,6 +114,7 @@ dataset = dataset[,c(1,2,nr_of_cols,4:nr_of_cols-1)]
 ################################
 
 # Remove dataset column, as it is not needed for this dataset
+# and group by subject and activity
 grouped = group_by(select(dataset, -dataset), subject, activity)
 
 # Calculate Means for each column

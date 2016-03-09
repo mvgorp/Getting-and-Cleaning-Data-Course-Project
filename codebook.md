@@ -86,7 +86,7 @@ The complete list of variables / columns you find below.
 |Column name | Description |
 |:-----------|:------------|
 |subject|Each row identifies the subject who performed the activity for each (mean) value. Its range is from 1 to 30. |
-|activity|Each row identifies the activity what was performed by the subject for each (mean) value. Possible values are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYIN|
+|activity|Each row identifies the activity what was performed by the subject for each (mean) value. Possible values are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYING|
 |tBodyAcc.mean.X|*see description above*|
 |tBodyAcc.mean.Y|*see description above*|
 |tBodyAcc.mean.Z|*see description above*|

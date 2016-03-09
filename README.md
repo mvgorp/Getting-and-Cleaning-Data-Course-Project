@@ -1,7 +1,7 @@
 ## Description of this project
 
 ### Background
-This repo was added regarding the Getting and Cleaning Data Course Project belonging to week 4 of the "Getting and Cleaning Data" - course, which is part of the Coursera Data Science Specialization.
+This repo was added for the Getting and Cleaning Data Course Project belonging to week 4 of the "Getting and Cleaning Data" - course, which is part of the Coursera Data Science Specialization.
 
 See below for the original assignment.
 

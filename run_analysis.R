@@ -10,8 +10,9 @@ library(readr) # blazing fast reading of large files
 #
 # Function buildSensordata
 #
-# Reads sensor (train or test) data
-# Sets the correct feature columnnames and combines with activities and subjects
+# Reads sensor (train or test) data from the original raw datafiles, 
+# sets the correct feature columnnames
+# and combines it all with the subjects and the activities
 buildSensordata = function(type) {
     
     # Set data dir
@@ -30,6 +31,8 @@ buildSensordata = function(type) {
     nr_of_features = length(features)
     
     # Clean feature names and make sure remaining column names are unique
+    # The names of the columns this way, together with information in the codebook 
+    # are considered more or less clear (and clean) enough. 
     features = sapply(features, function(x) { sub("\\(","",sub("\\)","",sub(",","-",x))) })
     features = make.names(names = features, unique = TRUE, allow_ = TRUE)
     
@@ -52,17 +55,18 @@ buildSensordata = function(type) {
     data = select(data, matches("(mean|std)"))
     
     # Convert in tbl_df and add column dataset
+    # that contains the type, like "train" or "test"
     data = mutate(tbl_df(data), dataset = type)
     
     ################################
     # ACTIVITIES
     ################################
     
-    # Get Activity labels
+    # Get activity labels from file
     activitylabels_file = paste0(datadir,'activity_labels.txt')
     activitylabels = tbl_df(read.csv(activitylabels_file, header = FALSE, sep = " "))
     
-    # Get activity per row
+    # Get activity per row, from file
     activities_file = paste0(datadir,type,'/Y_',type,'.txt')
     activities = tbl_df(read.csv(activities_file, header = FALSE)) # 
     
@@ -76,7 +80,7 @@ buildSensordata = function(type) {
     # SUBJECTS
     ################################
     
-    # Get subjects per row
+    # Get related subjects per row
     subjects_file = paste0(datadir,type,'/subject_',type,'.txt')
     subjects = tbl_df(read.csv(subjects_file, header = FALSE)) #
     colnames(subjects) = c("subject")

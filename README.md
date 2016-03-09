@@ -14,7 +14,7 @@ Basically it contains two part:
 2. the main program
 
 ######1. Function buildSensordata
-This function rhas one parameter type that can have the value "train" or "test".
+This function has one parameter **type** that can have the value "train" or "test".
 Based on this type, the function will read the related data, features, activities and subjects and combines all into one dataset.
 
 ######2. Main program

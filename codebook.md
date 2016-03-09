@@ -12,7 +12,8 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 ## Dataset
 This dataset includes one file: **dataset_means.txt**
 
-These are are all the average values per subject, per activity, from the complete raw dataset.
+The first row contains the colum names.
+The records contain are are all the average values per subject, per activity, from the complete raw dataset.
 
 For the description of the features, hereby the text from the original dataset: *(some feature names were slightly adapted for our purpose)*
 
@@ -84,8 +85,8 @@ The complete list of variables / columns you find below.
 ## Columns
 |Column name | Description |
 |:-----------|:------------|
-|subject|Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. |
-|activity|Each row identifies the activity what was performed by the subject for each window sample. Possible values are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYIN|
+|subject|Each row identifies the subject who performed the activity for each (mean) value. Its range is from 1 to 30. |
+|activity|Each row identifies the activity what was performed by the subject for each (mean) value. Possible values are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYIN|
 |tBodyAcc.mean.X|*see description above*|
 |tBodyAcc.mean.Y|*see description above*|
 |tBodyAcc.mean.Z|*see description above*|

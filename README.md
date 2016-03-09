@@ -10,7 +10,7 @@ The main file is the **run_analysis.R** file.
 
 The script contains elaborate comments on each step of the code.
 
-Basically it contains two part:
+Basically it contains two parts:
 
 1. function buildSensordata
 2. the main program

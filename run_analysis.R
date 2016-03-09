@@ -88,6 +88,10 @@ buildSensordata = function(type) {
     return(data)
 }
 
+#########################
+# BUILD THE ACTUAL DATASETS
+#########################
+
 # Read training data
 train = buildSensordata('train')
 
@@ -110,6 +114,8 @@ dataset = dataset[,c(1,2,nr_of_cols,4:nr_of_cols-1)]
 
 # Remove dataset column, as it is not needed for this dataset
 grouped = group_by(select(dataset, -dataset), subject, activity)
+
+# Calculate Means for each column
 dataset_means = summarise_each(grouped, funs(mean))
 
 # Write dataset

@@ -25,7 +25,6 @@ For the description of the features, we use the text from the original dataset: 
 >These signals were used to estimate variables of the feature vector for each pattern: '.XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 >tBodyAcc.XYZ
->
 >tGravityAcc.XYZ
 >
 >tBodyAccJerk.XYZ

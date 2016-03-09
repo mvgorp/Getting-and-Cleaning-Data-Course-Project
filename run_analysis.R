@@ -4,10 +4,8 @@
 # Unzipped in ./data directory (not included in repo)
 
 # Init
-library(data.table)
-library(dplyr)
-library(lubridate)
-library(readr)
+library(dplyr) # easy working with data
+library(readr) # blazing fast reading of large files
 
 #
 # Function buildSensordata
@@ -44,8 +42,8 @@ buildSensordata = function(type) {
     data_file = paste0(datadir,type,'/X_',type,'.txt')
     
     # Read data from file (using the nr of feature columns)
-    widths = fwf_widths(rep(c(16),nr_of_features))
-    data = read_fwf(data_file, widths, progress = interactive()) #
+    col_widths = fwf_widths(rep(c(16),nr_of_features))
+    data = read_fwf(data_file, col_widths) # optional: progress = interactive() to remove progressbar
     
     # Add features (names) as column names
     colnames(data) = features

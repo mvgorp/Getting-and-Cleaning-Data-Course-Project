@@ -21,9 +21,9 @@ buildSensordata = function(type) {
     n = 10
     
     
-    #########################
+    ################################
     # FEATURES
-    #########################
+    ################################
     # Fetch all possible features
     features_file = paste0(datadir,'features.txt')
     features = read.csv(features_file, header = FALSE, sep = " ")
@@ -37,9 +37,9 @@ buildSensordata = function(type) {
     features = make.names(names = features, unique = TRUE, allow_ = TRUE)
     
     
-    #########################
+    ################################
     # DATA RECORDS
-    #########################
+    ################################
     # Define datafilename based on type
     data_file = paste0(datadir,type,'/X_',type,'.txt')
     
@@ -56,9 +56,9 @@ buildSensordata = function(type) {
     data = mutate(tbl_df(data), dataset = type)
 
     
-    #########################
+    ################################
     # ACTIVITIES
-    #########################
+    ################################
     # Get Activity labels
     activitylabels_file = paste0(datadir,'activity_labels.txt')
     activitylabels = tbl_df(read.csv(activitylabels_file, header = FALSE, sep = " "))
@@ -73,9 +73,9 @@ buildSensordata = function(type) {
     data = bind_cols(activities, data)
     
     
-    #########################
+    ################################
     # SUBJECTS
-    #########################
+    ################################
     # Get subjects per row
     subjects_file = paste0(datadir,type,'/subject_',type,'.txt')
     subjects = tbl_df(read.csv(subjects_file, header = FALSE, nrows = n))
@@ -88,9 +88,10 @@ buildSensordata = function(type) {
     return(data)
 }
 
-#########################
-# BUILD THE ACTUAL DATASETS
-#########################
+
+################################
+# MAIN PROGRAM (build datasets)
+################################
 
 # Read training data
 train = buildSensordata('train')
@@ -106,11 +107,11 @@ nr_of_cols = length(names(dataset))
 dataset = dataset[,c(1,2,nr_of_cols,4:nr_of_cols-1)]
 
 
-####################
+################################
 # Step 5:
 # Build independent tidy data set with the average of each variable 
 # for each activity and each subject.
-####################
+################################
 
 # Remove dataset column, as it is not needed for this dataset
 grouped = group_by(select(dataset, -dataset), subject, activity)

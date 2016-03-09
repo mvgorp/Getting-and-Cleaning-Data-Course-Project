@@ -8,7 +8,9 @@ See below for the original assignment.
 ### Result
 The main file is the **run_analysis.R** file.
 
-Basically it contains two part:
+The script contains elaborate comments on each step of the code.
+
+Basically it contains two parts:
 
 1. function buildSensordata
 2. the main program
@@ -19,11 +21,10 @@ Based on this type, the function will read the related data, features, activitie
 The function assumes that all data is downloaded and unzipped available in the ./data directory.
 
 ######2. Main program
-From the main program the aforementioned function buildSensordata() is called for the "train" and "test" types datasets.
-The result from both will me merged into one.
+From the main program the function buildSensordata() is called twice, for the "train" and "test" types datasets.
+After that, the result from both will me merged into one.
 
 Finaly, the merged dataset is used to calculate the means of all variables, per subject, per activity and the result will be saved to the file dataset_means.txt
-
 
 #### Original Assignment
 >The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. You will be graded by your peers on a series of yes/no questions related to the project. You will be required to submit: 1) a tidy data set as described below, 2) a link to a Github repository with your script for performing the analysis, and 3) a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. You should also include a README.md in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.

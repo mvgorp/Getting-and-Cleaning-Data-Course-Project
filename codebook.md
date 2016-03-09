@@ -13,7 +13,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 This dataset includes one file: **dataset_means.txt**
 
 The first row contains the colum names.
-The records contain are are all the average values per subject, per activity, from the complete raw dataset.
+The records contain are are all the average values per subject, per activity, for all features from the complete raw dataset, that have "mean" or "std" in the name.
 
 For the description of the features, hereby the text from the original dataset: *(some feature names were slightly adapted for our purpose)*
 

@@ -6,7 +6,7 @@ This repo was added regarding the Getting and Cleaning Data Course Project belon
 See below for the original assignment.
 
 ### Result
-The main file is the run_analysis.R file.
+The main file is the **run_analysis.R** file.
 
 Basically it contains two part:
 

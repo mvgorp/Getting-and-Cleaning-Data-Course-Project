@@ -86,92 +86,93 @@ The complete list of variables / columns you find below.
 |:-----------|:------------|
 |subject|Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. |
 |activity|Each row identifies the activity what was performed by the subject for each window sample. Possible values are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYIN|
-|tBodyAcc.mean.X|*see above*|
-|tBodyAcc.mean.Y|*see above*|
-|tBodyAcc.mean.Z|*see above*|
-|tBodyAcc.std.X|*see above*|
-|tBodyAcc.std.Y|*see above*|
-|tBodyAcc.std.Z|*see above*|
-|tGravityAcc.mean.X|*see above*|
-|tGravityAcc.mean.Y|*see above*|
-|tGravityAcc.mean.Z|*see above*|
-|tGravityAcc.std.X|*see above*|
-|tGravityAcc.std.Y|*see above*|
-|tGravityAcc.std.Z|*see above*|
-|tBodyAccJerk.mean.X|*see above*|
-|tBodyAccJerk.mean.Y|*see above*|
-|tBodyAccJerk.mean.Z|*see above*|
-|tBodyAccJerk.std.X|*see above*|
-|tBodyAccJerk.std.Y|*see above*|
-|tBodyAccJerk.std.Z|*see above*|
-|tBodyGyro.mean.X|*see above*|
-|tBodyGyro.mean.Y|*see above*|
-|tBodyGyro.mean.Z|*see above*|
-|tBodyGyro.std.X|*see above*|
-|tBodyGyro.std.Y|*see above*|
-|tBodyGyro.std.Z|*see above*|
-|tBodyGyroJerk.mean.X|*see above*|
-|tBodyGyroJerk.mean.Y|*see above*|
-|tBodyGyroJerk.mean.Z|*see above*|
-|tBodyGyroJerk.std.X|*see above*|
-|tBodyGyroJerk.std.Y|*see above*|
-|tBodyGyroJerk.std.Z|*see above*|
-|tBodyAccMag.mean|*see above*|
-|tBodyAccMag.std|*see above*|
-|tGravityAccMag.mean|*see above*|
-|tGravityAccMag.std|*see above*|
-|tBodyAccJerkMag.mean|*see above*|
-|tBodyAccJerkMag.std|*see above*|
-|tBodyGyroMag.mean|*see above*|
-|tBodyGyroMag.std|*see above*|
-|tBodyGyroJerkMag.mean|*see above*|
-|tBodyGyroJerkMag.std|*see above*|
-|fBodyAcc.mean.X|*see above*|
-|fBodyAcc.mean.Y|*see above*|
-|fBodyAcc.mean.Z|*see above*|
-|fBodyAcc.std.X|*see above*|
-|fBodyAcc.std.Y|*see above*|
-|fBodyAcc.std.Z|*see above*|
-|fBodyAcc.meanFreq.X|*see above*|
-|fBodyAcc.meanFreq.Y|*see above*|
-|fBodyAcc.meanFreq.Z|*see above*|
-|fBodyAccJerk.mean.X|*see above*|
-|fBodyAccJerk.mean.Y|*see above*|
-|fBodyAccJerk.mean.Z|*see above*|
-|fBodyAccJerk.std.X|*see above*|
-|fBodyAccJerk.std.Y|*see above*|
-|fBodyAccJerk.std.Z|*see above*|
-|fBodyAccJerk.meanFreq.X|*see above*|
-|fBodyAccJerk.meanFreq.Y|*see above*|
-|fBodyAccJerk.meanFreq.Z|*see above*|
-|fBodyGyro.mean.X|*see above*|
-|fBodyGyro.mean.Y|*see above*|
-|fBodyGyro.mean.Z|*see above*|
-|fBodyGyro.std.X|*see above*|
-|fBodyGyro.std.Y|*see above*|
-|fBodyGyro.std.Z|*see above*|
-|fBodyGyro.meanFreq.X|*see above*|
-|fBodyGyro.meanFreq.Y|*see above*|
-|fBodyGyro.meanFreq.Z|*see above*|
-|fBodyAccMag.mean|*see above*|
-|fBodyAccMag.std|*see above*|
-|fBodyAccMag.meanFreq|*see above*|
-|fBodyBodyAccJerkMag.mean|*see above*|
-|fBodyBodyAccJerkMag.std|*see above*|
-|fBodyBodyAccJerkMag.meanFreq|*see above*|
-|fBodyBodyGyroMag.mean|*see above*|
-|fBodyBodyGyroMag.std|*see above*|
-|fBodyBodyGyroMag.meanFreq|*see above*|
-|fBodyBodyGyroJerkMag.mean|*see above*|
-|fBodyBodyGyroJerkMag.std|*see above*|
-|fBodyBodyGyroJerkMag.meanFreq|*see above*|
-|angletBodyAccMean.gravity|*see above*|
-|angletBodyAccJerkMean.gravityMean.|*see above*|
-|angletBodyGyroMean.gravityMean|*see above*|
-|angletBodyGyroJerkMean.gravityMean|*see above*|
-|angleX.gravityMean|*see above*|
-|angleY.gravityMean|*see above*|
-|angleZ.gravityMean|*see above*|
+|tBodyAcc.mean.X|*see description above*|
+|tBodyAcc.mean.Y|*see description above*|
+|tBodyAcc.mean.Z|*see description above*|
+|tBodyAcc.std.X|*see description above*|
+|tBodyAcc.std.Y|*see description above*|
+|tBodyAcc.std.Z|*see description above*|
+|tGravityAcc.mean.X|*see description above*|
+|tGravityAcc.mean.Y|*see description above*|
+|tGravityAcc.mean.Z|*see description above*|
+|tGravityAcc.std.X|*see description above*|
+|tGravityAcc.std.Y|*see description above*|
+|tGravityAcc.std.Z|*see description above*|
+|tBodyAccJerk.mean.X|*see description above*|
+|tBodyAccJerk.mean.Y|*see description above*|
+|tBodyAccJerk.mean.Z|*see description above*|
+|tBodyAccJerk.std.X|*see description above*|
+|tBodyAccJerk.std.Y|*see description above*|
+|tBodyAccJerk.std.Z|*see description above*|
+|tBodyGyro.mean.X|*see description above*|
+|tBodyGyro.mean.Y|*see description above*|
+|tBodyGyro.mean.Z|*see description above*|
+|tBodyGyro.std.X|*see description above*|
+|tBodyGyro.std.Y|*see description above*|
+|tBodyGyro.std.Z|*see description above*|
+|tBodyGyroJerk.mean.X|*see description above*|
+|tBodyGyroJerk.mean.Y|*see description above*|
+|tBodyGyroJerk.mean.Z|*see description above*|
+|tBodyGyroJerk.std.X|*see description above*|
+|tBodyGyroJerk.std.Y|*see description above*|
+|tBodyGyroJerk.std.Z|*see description above*|
+|tBodyAccMag.mean|*see description above*|
+|tBodyAccMag.std|*see description above*|
+|tGravityAccMag.mean|*see description above*|
+|tGravityAccMag.std|*see description above*|
+|tBodyAccJerkMag.mean|*see description above*|
+|tBodyAccJerkMag.std|*see description above*|
+|tBodyGyroMag.mean|*see description above*|
+|tBodyGyroMag.std|*see description above*|
+|tBodyGyroJerkMag.mean|*see description above*|
+|tBodyGyroJerkMag.std|*see description above*|
+|fBodyAcc.mean.X|*see description above*|
+|fBodyAcc.mean.Y|*see description above*|
+|fBodyAcc.mean.Z|*see description above*|
+|fBodyAcc.std.X|*see description above*|
+|fBodyAcc.std.Y|*see description above*|
+|fBodyAcc.std.Z|*see description above*|
+|fBodyAcc.meanFreq.X|*see description above*|
+|fBodyAcc.meanFreq.Y|*see description above*|
+|fBodyAcc.meanFreq.Z|*see description above*|
+|fBodyAccJerk.mean.X|*see description above*|
+|fBodyAccJerk.mean.Y|*see description above*|
+|fBodyAccJerk.mean.Z|*see description above*|
+|fBodyAccJerk.std.X|*see description above*|
+|fBodyAccJerk.std.Y|*see description above*|
+|fBodyAccJerk.std.Z|*see description above*|
+|fBodyAccJerk.meanFreq.X|*see description above*|
+|fBodyAccJerk.meanFreq.Y|*see description above*|
+|fBodyAccJerk.meanFreq.Z|*see description above*|
+|fBodyGyro.mean.X|*see description above*|
+|fBodyGyro.mean.Y|*see description above*|
+|fBodyGyro.mean.Z|*see description above*|
+|fBodyGyro.std.X|*see description above*|
+|fBodyGyro.std.Y|*see description above*|
+|fBodyGyro.std.Z|*see description above*|
+|fBodyGyro.meanFreq.X|*see description above*|
+|fBodyGyro.meanFreq.Y|*see description above*|
+|fBodyGyro.meanFreq.Z|*see description above*|
+|fBodyAccMag.mean|*see description above*|
+|fBodyAccMag.std|*see description above*|
+|fBodyAccMag.meanFreq|*see description above*|
+|fBodyBodyAccJerkMag.mean|*see description above*|
+|fBodyBodyAccJerkMag.std|*see description above*|
+|fBodyBodyAccJerkMag.meanFreq|*see description above*|
+|fBodyBodyGyroMag.mean|*see description above*|
+|fBodyBodyGyroMag.std|*see description above*|
+|fBodyBodyGyroMag.meanFreq|*see description above*|
+|fBodyBodyGyroJerkMag.mean|*see description above*|
+|fBodyBodyGyroJerkMag.std|*see description above*|
+|fBodyBodyGyroJerkMag.meanFreq|*see description above*|
+|angletBodyAccMean.gravity|*see description above*|
+|angletBodyAccJerkMean.gravityMean.|*see description above*|
+|angletBodyGyroMean.gravityMean|*see description above*|
+|angletBodyGyroJerkMean.gravityMean|*see description above*|
+|angleY.gravityMean|*see description above*|
+|angleZ.gravityMean|*see description above*|
+|angleX.gravityMean|*see description above*|
+
 
 
  

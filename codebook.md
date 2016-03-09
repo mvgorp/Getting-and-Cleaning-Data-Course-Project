@@ -55,7 +55,7 @@ Part the description from the original dataset:
 >tBodyGyroMean
 >tBodyGyroJerkMean
 
->The complete list of variables / columns you find below.
+The complete list of variables / columns you find below.
 
 
 ## Columns

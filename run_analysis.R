@@ -10,8 +10,8 @@ library(dplyr)
 #
 # Function buildSensordata
 #
-# Reads sensor (training or test) data
-# Sets the correct columnnames and merges with activities
+# Reads sensor (train or test) data
+# Sets the correct feature columnnames and combines with activities and subjects
 buildSensordata = function(type) {
     
     # Set data dir
@@ -102,7 +102,7 @@ test = buildSensordata('test')
 # Merge both sets
 dataset = bind_rows(train, test)
 
-# Reorder some columns
+# Move dataset-type column to the front for better readability
 nr_of_cols = length(names(dataset))
 dataset = dataset[,c(1,2,nr_of_cols,4:nr_of_cols-1)]
 

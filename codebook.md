@@ -62,15 +62,21 @@ For the description of the features, we use the text from the original dataset: 
 >The set of variables that were estimated from these signals are: 
 
 >mean(): Mean value
+
 >std(): Standard deviation
 
 >Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
 >gravityMean
+
 >tBodyAccMean
+
 >tBodyAccJerkMean
+
 >tBodyGyroMean
+
 >tBodyGyroJerkMean
+
 
 The complete list of variables / columns you find below.
 
